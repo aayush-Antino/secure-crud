@@ -9,7 +9,6 @@ COPY package*.json ./
 RUN npm install --production
 
 COPY src ./src
-COPY .env .env
 
 RUN chown -R appuser:appgroup /usr/src/app
 
